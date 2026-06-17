@@ -90,6 +90,15 @@ var response = await aIAgent.RunAsync(msg);
 Console.WriteLine(response);
 ```
 
+## 🎬 Demo
+
+![Agent çalışma ekranı](demo.png)
+
+Agent'ın tool-calling özelliğini gösteren terminal çıktısı:
+- `2+2` sorusuna matematik cevabı
+- `X isimli müşterinin sipariş sayısı` sorusunda **Tool Working...** çıktısıyla `GetOrderCountToday` metodunu otomatik çağırması
+- Bilgisi dışındaki sorularda dürüstçe "bilmiyorum" demesi
+
 ## 🔍 Öğrendiklerim
 
 - `OpenAI.Chat.ChatClient` doğrudan `AsAIAgent()` kabul etmiyor — araya `.AsIChatClient()` koymak gerekiyor
