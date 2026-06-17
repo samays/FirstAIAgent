@@ -27,7 +27,16 @@ cd repo-adin
 ```
 
 ### 2. GitHub token oluştur
-[github.com/settings/tokens](https://github.com/settings/tokens) adresinden `models:read` izni olan bir token oluştur.
+
+1. [github.com/settings/tokens](https://github.com/settings/tokens) adresine git
+2. **"Generate new token (classic)"** butonuna tıkla
+3. Token'a bir isim ver (örn: `ai-agent-token`)
+4. **Expiration** seç (örn: 30 days)
+5. İzinler kısmında **`models:read`** kutucuğunu işaretle
+6. **"Generate token"** butonuna tıkla
+7. Çıkan token'ı kopyala — bir daha göremezsin!
+
+> ⚠️ Token'ı kod içine veya Git'e asla yazma.
 
 ### 3. Token'ı User Secrets ile kaydet
 ```bash
